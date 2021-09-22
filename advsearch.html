@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Image Search</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans HK' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="navtext">Search</a>
+        <a href="imgsearch.html" class="navtext">Images</a>
+        <span class="material-icons apps">apps</span>
+        <img src="avatar.png" alt="avatar" class="avatar">
+    </nav>
+    <div class="advanced-search-header">
+        <a href="index.html">
+            <img src="googlelogo.png" alt="Google logo" />
+        </a>
+    </div>
+    <div class="advanced-search-appbar">
+        <label>Advanced Search</label>
+    </div>
+    <div class="advanced-search-separator"></div>
+
+    <div class="advanced-search-container">
+        <form action="https://www.google.com/search" method="get">
+            <label>Find pages with...</label>
+            <div class="whitespace"></div>
+            <label>To do this in the search box.</label>
+            <div class="form-group">
+                <label> all these words:</label>
+                <input type="text" name="as_q">
+                <div class="clarification">
+                    Type the important words: <span class="monospace">tri-colour rat terrier</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>this exact word or phrase:</label>
+                <input type="text" name="as_epq">
+                <div class="clarification">
+                    Put exact words in quotes:
+                    <span class="monospace">"rat terrier"</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label> any of these words: </label>
+                <input type="text" name="as_oq">
+                <div class="clarification">
+                    Type OR between all the words you want:
+                    <span class="monospace">miniature OR standard</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>none of these words:</label>
+                <input type="text" name="as_eq">
+                <div class="clarification">
+                    Put a minus sign just before words that you don't want:
+                    <span class="monospace">-rodent, -"Jack Russell"</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>numbers ranging from:</label>
+                <div class="number-range">
+                    <input type="text" name="as_nlo"> to <input class="number-range" type="text" name="as_nhi">
+                </div>
+                <div class="clarification">
+                    Put two full stops between the numbers and add a unit of measurement: <br />
+                    <span class="monospace">10..35 kg, £300..£500, 2010..2011</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label></label>
+                <div class="right-align">
+                    <input type="submit" class="blue-button" value="Advanced Search">
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <span id="footleft">
+            <a href="https://about.google/?utm_source=google-UA&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+                target="_blank" class="footLink">About</a>
+            <a href="https://github.com/falconxv" target="_blank" class="footLink">Advertising</a>
+            <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
+                target="_blank" class="footLinkA">Business</a>
+        </span>
+        <span id="footright">
+            <a href="https://policies.google.com/privacy?hl=en&gl=us" target="_blank" class="footLinkB">Privacy</a>
+            <a href="https://policies.google.com/terms?hl=en&gl=us" target="_blank" class="footLinkB">Terms</a>
+            <a href="https://www.google.com/preferences?hl=en" target="_blank" class="footLinkC">Settings</a>
+        </span>
+    </footer>
+</body>
+
+</html>
